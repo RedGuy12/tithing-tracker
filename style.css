@@ -1,0 +1,34 @@
+
+body {
+	margin: 10px;
+}
+table {
+	width: 100%;
+}
+
+table th {
+	background-color: #1b4885;
+	color: ghostwhite;
+	border-bottom: black solid 4px;
+}
+
+table tr:nth-child(odd) {
+	background-color: #eee;
+}
+
+table tr:nth-child(even) {
+	background-color: #fff;
+}
+
+table tbody {
+	border: black 2.5px solid;
+}
+
+table td,
+table th {
+	padding: 7.5px;
+}
+
+hr{
+	border-width: 2px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Tithing Tracker</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script defer async src="script.js"></script>
+	</head>
+	<body>
+		<h1>Tithing Tracker</h1>
+		<hr />
+		<h2>Recieved money</h2>
+		<form>
+			<label>Amount <input name="amount" required type="number" /></label><br />
+			<label
+				>Location
+				<select name="location">
+					<option value="spending">Spending</option>
+					<option value="savings">Savings</option>
+					<option value="physical">Physical</option>
+				</select></label
+			><br />
+			<button type="submit" id="recieve">Go</button>
+		</form><br><button id="reset">Reset ballances</button>
+		<hr />
+		<h2>Need to pay on</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Location</th>
+					<th>Amount</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Spending</td>
+					<td id="spending-balance">0</td>
+				</tr>
+				<tr>
+					<td>Savings</td>
+					<td id="savings-balance">0</td>
+				</tr>
+				<tr>
+					<td>Physical</td>
+					<td id="physical-balance">0</td>
+				</tr>
+			</tbody>
+		</table>
+		<hr />
+		<table>
+			<h2>TODO Breakdown</h2>
+			<thead>
+				<tr>
+					<th>From</th>
+					<th>To</th>
+					<th>Amount</th>
+				</tr>
+			</thead>
+			<tbody id="todos"></tbody>
+		</table>
+	</body>
+</html>
